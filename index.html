@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Clock App</title>
+  </head>
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">ClockApp</a>
+  </nav>
+  <body>
+    <div class="page">
+      <div class="two text-center">
+        <h1>Welcome to the Clock App</h1>
+        <h1 class="text-center" id="greeting"></h1>
+        <p>
+          <a id="text" class="btn btn-light text-center" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Settings</a>
+          <button class="btn btn-light" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">More Information</button>
+        </p>
+        <div class="row">
+          <div class="col">
+            <div class="collapse multi-collapse" id="multiCollapseExample1">
+              <div class="card card-body">
+                <h1>Settings</h1>
+                <p>Change background colour    <input type="color" id="color" oninput="chooseColour()"></p>
+                <p>Change text colour     <input type="color" id="colortwo" oninput="chooseColourtwo()"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="collapse multi-collapse" id="multiCollapseExample2">
+              <div class="card card-body">
+                <h1 id="weekday"></h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center" id="clock"></div>
+      </div>
+    </div>
+    <h1 class="title text-center"></h1>
+    <div class="apod text-center">
+      <div class="card-container">
+        <div class="card">
+          <div class="card-body">
+            <h1 class="card-title">Here is NASA'S Astronomy Picture of the Day</h1>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+          <img id="apod" src="" class="card-img-bottom" alt="Nasa Astronomy Picture of the Day">
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="apod.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
