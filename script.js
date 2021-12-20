@@ -90,3 +90,5 @@ let fullWeek = [
 let todaysDate = new Date();
 let whatDay = todaysDate.getDay();
 weekDay.innerHTML = `Today is <span>${fullWeek[whatDay]} &#128512;</span>`;
+
+// Thanks for a great semester Geoff!!! :)
